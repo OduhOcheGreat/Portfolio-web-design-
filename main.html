@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="brand">
+                <div class="logo">WD</div>
+                <div>
+                    <div style="font-weight:800">WILLDEV</div>
+                    <div class="sm">Mobile Developer • Designer</div>
+                </div>
+            </div>
+
+
+            <nav aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+                <a class="cta" href="#contact">Hire Me</a>
+            </nav>
+        </header>
+
+
+        <main>
+            <section class="hero">
+                <div class="hero-card">
+                    <h1 class="name">Hi — I'm OCHE GREAT ODUH</h1>
+                    <div class="title">I build delightful, accessible web experiences.</div>
+                    <p class="bio">I'm a product-focused developer who turns UX ideas into accessible, performant
+                        websites
+                        and apps. I love shipping clean code and elegant interactions.</p>
+
+                    <a class="pill" href="#projects">View work →</a>
+                    <div class="sm">Available for freelance & full-time</div>
+
+                    <div class="sm">Currently: Lagos, Nigeria</div>
+                    <div class="pill">Open to new opportunities</div>
+
+
+                    <div class="sm">Socials</div>
+                    <a class="sm muted" href="#">GitHub</a>
+                    <a class="sm muted" href="#">LinkedIn</a>
+                    <a class="sm muted" href="#">Twitter</a>
+                </div>
+
+
+                <aside class="avatar card">
+                    <img src="./image/me.jpg" alt="Portrait placeholder" height="250" width="250">
+
+                    <div style="padding:12px">
+                        <div class="skill">React</div>
+                        <div class="skill">TypeScript</div>
+                        <div class="skill">Accessibility</div>
+                        <div class="skill">Performance</div>
+                    </div>
+            </section>
+
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <div class="contact-grid">
+                    <div class="hero-card">
+                        <p class="sm">Want to work together? Send a message — I typically reply within a few business
+                            days.</p>
+                        <form onsubmit="handleForm(event)">
+                            <div style="margin-top:12px">
+                                <label for="name">Name :</label>
+                                <input id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div style="margin-top:12px">
+                                <label for="email">Email :</label>
+                                <input id="email" type="email" name="email" placeholder="you@example.com" required>
+                            </div>
+
+                            <label for="message">Message :</label>
+                            <textarea id="message" rows="5" name="message" placeholder="Tell me about your project"
+                                required></textarea>
+
+                            <button type="submit">Send message</button>
+                            <div class="sm muted">Or email me at <strong>hello@domain.com</strong></div>
+
+                        </form>
+                    </div>
+
+
+                    <aside class="card">
+                        <h3>Other ways to reach</h3>
+                        <p class="sm muted">Phone: +123 456 7890</p>
+                        <p class="sm muted">Location: City, Country</p>
+                        <div style="margin-top:16px">
+                            <h4 style="margin:0 0 8px 0">Availability</h4>
+                            <div class="sm">Freelance, Remote, Full-time</div>
+                        </div>
+                    </aside>
+
+            </section>
+
+        </main>
+
+
+        <footer>
+            <div class="sm muted">© <span id="year"></span> WiLLENS • Built with care.</div>
+        </footer>
+    </div>
+</body>
+
+</html>
